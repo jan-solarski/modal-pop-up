@@ -15,17 +15,11 @@ const openModal = () => {
   overlay.classList.remove('hidden');
 };
 
-// usuwam classes hidden zeby wyswietlic modal window & overlay kiedy klikam na show modal buttons
-
 btnsOpenModal.forEach(el => {
   el.addEventListener('click', openModal);
 });
 
-// dodaje z powrotem classes hidden zeby schowac modal window & overlay kiedy klikam na x button w modal window
-
 btnCloseModal.addEventListener('click', hideModal);
-
-// dodaje z powrotem classes hidden zeby schowac modal window & overlay kiedy klikam na overlay
 
 overlay.addEventListener('click', hideModal);
 
